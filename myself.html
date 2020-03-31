@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <title>TSfCM</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="icon" href="pin.ico">
+
+        <!-- chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="header">
+                <h1>HP of Masaaki Kawahara</h1>
+            </div>
+
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item"><a class="nav-link" href="top.html">top</a></li>
+                <li class="nav-item"><a class="nav-link active" href="myself.html">myself</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">other</a></li>
+                <li class="nav-item"><a class="nav-link" href="admin.html">admin</a></li>
+            </ul>
+            
+            
+            <div id="main">
+                <table class="table table-hover table-striped">
+                    <tr>
+                        <th colspan=2>Brief Self Introduction</th>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>Masaaki Kawahara</td>
+                    </tr>
+                    <tr>
+                        <td>Birth</td>
+                        <td>1996/08/14</td>
+                    </tr>
+                    <tr>
+                        <td>From</td>
+                        <td>Okayama</td>
+                    </tr>
+                    <tr>
+                        <td>Favorite</td>
+                        <td>sushi</td>
+                    </tr>
+                    <tr>
+                        <td>Animal Fortune Telling</td>
+                        <td>sheep</td>
+                    </tr>
+                </table>
+            </div>
+
+            <canvas id="myRaderChart"></canvas>
+            <script>
+                var ctx = document.getElementById("myRaderChart");
+                var myRadarChart = new Chart(ctx, {
+                    type: 'radar', 
+                    data: { 
+                        labels: ["HTML/CSS", "JavaScript", "Python", "ABAP", "Japanese"],
+                        datasets: [{
+                            label: "my skill",
+                            data: [20, 15, 10, 10, 45],
+                            backgroundColor: 'RGBA(225,95,150, 0.5)',
+                            borderColor: 'RGBA(225,95,150, 1)',
+                            borderWidth: 2,
+                            pointBackgroundColor: 'RGB(225,95,150, 1)'
+                        }]
+                    },
+                    options: {
+                        scale:{
+                            ticks:{
+                                suggestedMin: 0,
+                                suggestedMax: 50,
+                                stepSize: 10
+                            }
+                        }
+                    }
+                });
+                </script>
+
+            <div id="footer">
+                <p>contact: masaka123m@gmail.com</p>
+            </div>
+        </div>
+    </body>
+</html>
+
+

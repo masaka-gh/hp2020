@@ -1,0 +1,58 @@
+/* class */
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+.green {
+    color: green;
+}
+.yellow{
+    color: yellow;
+}
+
+.pin{
+    border-radius: 20%;  /* 角丸半径を50%にする(=円形にする) */
+    width:  300px;       /* ※縦横を同値に */
+    height: 300px;       /* ※縦横を同値に */
+    object-fit: cover;
+    margin: 50px;
+}
+
+.top_sentences{
+    display: inline;
+}
+
+.index_h1{
+    padding-top: 20px;
+}
+
+/* id */
+#main{
+    padding: 50px;
+}
+
+#container {
+    background-color: lightblue;
+}
+
+#header {
+    background-color: lightsteelblue
+}
+
+#main {
+    background-color: whitesmoke;
+    float: left;
+    width: 100%;
+}
+
+#top_side {
+    float: left;
+}
+
+#footer {
+    clear: both;
+    background-color: palevioletred;
+    padding: 25px;
+}
