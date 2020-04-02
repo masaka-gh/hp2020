@@ -20,6 +20,33 @@
     margin: 50px;
 }
 
+.round_button{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+}
+
+/* Rock Paper Scissors */
+.rock{
+    background-color: deepskyblue;
+}
+.rock:hover{
+    background-color: dodgerblue;
+}
+.paper{
+    background-color: hotpink
+}
+.paper:hover{
+    background-color: deeppink;
+}
+.scissors{
+    background-color: yellow;
+}
+.scissors:hover{
+    background-color: gold;
+}
+
 .top_sentences{
     display: inline;
 }

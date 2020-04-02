@@ -3,6 +3,7 @@
     <head>
         <title>TSfCM</title>
         <meta charset="utf-8">
+        <script type="text/javascript" src="main.js"></script>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="icon" href="pin.ico">
@@ -22,12 +23,12 @@
             </ul>
             
             <div id="main">
-                <h1 class="index">This is a photo of apples.</h1>
+                <h1 class="index">Fhoto of Apples</h1>
                 <center>
                     <img src="apples.jpg" alt="photo of apples">
                 </center>
 
-                <h1 class="index">This is a fake Google logo.</h1>
+                <h1 class="index">Fake Google</h1>
                 <center>
                     <h2>
                         <span class="blue">G</span>
@@ -40,20 +41,19 @@
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
                         <div class="input-group-append">
-                            <button class="btn btn-primary" type="button" onclick="myfunc()">Search</button>
-                            <script>           
-                                var myfunc = function () {
-                                    for (var i = 0; i < 5; i++) {
-                                        alert('無限アラート！');
-                                    }
-                                    alert('嘘だよ！');
-                                }           
-                            </script>
+                            <button class="btn btn-primary" type="button" onclick="search()">Search</button>
                         </div>
                     </div>
                 </center>
 
-                <h1 class="index">This is my linebot.</h1>
+                <h1 class="index">Rock-Paper-Scissors</h1>
+                <center>
+                    <button class="round_button rock" onclick="rpsfuncRock()">Rock</button>
+                    <button class="round_button paper" onclick="rpsfuncPaper()">Paper</button>
+                    <button class="round_button scissors" onclick="rpsfuncScissors()">Scissors</button>
+                </center>
+
+                <h1 class="index">Linebot</h1>
                 <center>
                     <a type="button" class="btn btn-success" href="https://lin.ee/zdnc9gh" target="_blank">ADD FRIEND in LINE!</a>
                     <p>LINE bot ID:@351byvmb</p>
