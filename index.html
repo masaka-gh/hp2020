@@ -13,58 +13,41 @@
             <div id="header">
                 <h1>HP of Masaaki Kawahara</h1>
             </div>
-
-            <ul class="nav nav-pills nav-fill">
-                <li class="nav-item"><a class="nav-link" href="top.html">top</a></li>
-                <li class="nav-item"><a class="nav-link" href="myself.html">myself</a></li>
-                <li class="nav-item"><a class="nav-link active" href="index.html">other</a></li>
-                <li class="nav-item"><a class="nav-link" href="admin.html">admin</a></li>
-            </ul>
             
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item"><a class="nav-link active" href="index.html">TOP</a></li>
+                <li class="nav-item"><a class="nav-link" href="myself.html">MYSELF</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
+                <li class="nav-item"><a class="nav-link" href="admin.html">ADMIN</a></li>
+            </ul>
+
             <div id="main">
-                <h1 class="index">This is a photo of apples.</h1>
-                <center>
-                    <img src="apples.jpg" alt="photo of apples">
-                </center>
+                <img id="top_side" class="pin" src="pin.png" alt="photo of pin">
 
-                <h1 class="index">This is a fake Google logo.</h1>
-                <center>
-                    <h2>
-                        <span class="blue">G</span>
-                        <span class="red">o</span>
-                        <span class="yellow">o</span>
-                        <span class="blue">g</span>
-                        <span class="green">l</span>
-                        <span class="red">e</span>
-                    </h2>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary" type="button" onclick="myfunc()">Search</button>
-                            <script>           
-                                var myfunc = function () {
-                                    for (var i = 0; i < 5; i++) {
-                                        alert('無限アラート！');
-                                    }
-                                    alert('嘘だよ！');
-                                }           
-                            </script>
-                        </div>
-                    </div>
-                </center>
+                <p class="top_sentences">
+                    Hello World!<br>
+                    This site is my home page.<br>
+                    You can change pages clicking the tabs on top.
+                </p>
+            </div>
 
-                <h1 class="index">This is my linebot.</h1>
-                <center>
-                    <a type="button" class="btn btn-success" href="https://lin.ee/zdnc9gh" target="_blank">ADD FRIEND in LINE!</a>
-                    <p>LINE bot ID:@351byvmb</p>
-                </center>
-
+            <p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    when push this button
+                </a>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    "hello world!" does not appear
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    hello world!
+                </div>
             </div>
 
             <div id="footer">
                 <p>contact: masaka123m@gmail.com</p>
             </div>
-
         </div>
     </body>
 </html>
