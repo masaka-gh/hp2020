@@ -22,31 +22,42 @@
             </ul>
             
             <div id="main">
-                <h1 class="index_h1">This is a photo of apples.</h1>
-                <img src="apples.jpg" alt="photo of apples">
+                <h1 class="index">This is a photo of apples.</h1>
+                <center>
+                    <img src="apples.jpg" alt="photo of apples">
+                </center>
 
-                <h1 class="index_h1">This is a fake Google logo.</h1>
-                <h2>
-                    <span class="blue">G</span>
-                    <span class="red">o</span>
-                    <span class="yellow">o</span>
-                    <span class="blue">g</span>
-                    <span class="green">l</span>
-                    <span class="red">e</span>
-                </h2>
-                
-                <h1 class="index_h1">This is a dangerous button.</h1><br>
-                <input type="button" class="btn btn-primary" value="Check" onclick="myfunc()">
-                <script>           
-                var myfunc = function () {
-                    alert('無限アラート！');
-                    alert('嘘だよ！');
-                }           
-                </script>
+                <h1 class="index">This is a fake Google logo.</h1>
+                <center>
+                    <h2>
+                        <span class="blue">G</span>
+                        <span class="red">o</span>
+                        <span class="yellow">o</span>
+                        <span class="blue">g</span>
+                        <span class="green">l</span>
+                        <span class="red">e</span>
+                    </h2>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button" onclick="myfunc()">Search</button>
+                            <script>           
+                                var myfunc = function () {
+                                    for (var i = 0; i < 5; i++) {
+                                        alert('無限アラート！');
+                                    }
+                                    alert('嘘だよ！');
+                                }           
+                            </script>
+                        </div>
+                    </div>
+                </center>
 
-                <h1 class="index_h1">This is my linebot.</h1>
-                <p>LINE bot ID:@351byvmb</p>
-                <a type="button" class="btn btn-success" href="https://lin.ee/zdnc9gh" target="_blank">ADD FRIEND in LINE!</a>
+                <h1 class="index">This is my linebot.</h1>
+                <center>
+                    <a type="button" class="btn btn-success" href="https://lin.ee/zdnc9gh" target="_blank">ADD FRIEND in LINE!</a>
+                    <p>LINE bot ID:@351byvmb</p>
+                </center>
 
             </div>
 

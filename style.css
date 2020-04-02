@@ -24,8 +24,13 @@
     display: inline;
 }
 
-.index_h1{
-    padding-top: 20px;
+h1.index{
+    padding-top: 50px;
+}
+
+p.box {
+    border-bottom: 5px dashed gray;
+    padding: 20px;
 }
 
 /* id */
